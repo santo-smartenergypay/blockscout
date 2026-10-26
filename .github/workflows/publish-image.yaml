@@ -12,6 +12,7 @@ permissions:
 
 env:
   IMAGE_NAME: ghcr.io/${{ github.repository }}
+  RELEASE_VERSION: 11.3.3
 
 jobs:
   build-and-publish:
