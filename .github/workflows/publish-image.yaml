@@ -56,5 +56,6 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           build-args: |
+            RELEASE_VERSION=${{ env.RELEASE_VERSION }}
             GIT_COMMIT_SHA=${{ env.SHORT_SHA }}
             GIT_TAG=${{ github.ref_type == 'tag' && github.ref_name || '' }}
